@@ -13,14 +13,18 @@ function computerPlay() {
     return compMove;
 }
 
-let compSelection = computerPlay();
+let compSelection; // = computerPlay();
 let playerSelection; //= prompt("Make your move:");
+/*Selection variable assignments moved into playRound 
+so they are decided for every round played.*/
 let result; //to give access to result outside of local scope
 
 function playRound(playerSelection, compSelection) {
     playerSelection = prompt("Make your move:");
+    playerSelection = playerSelection.toLowerCase();
+    compSelection = computerPlay();
     switch (playerSelection) {
-        case 'Rock':
+        case 'rock':
             switch (compSelection) {
                 case 'Rock': 
                     result = "tie";
@@ -36,7 +40,7 @@ function playRound(playerSelection, compSelection) {
             }
             break;
         
-        case 'Scissors':
+        case 'scissors':
             switch (compSelection) {
                 case 'Scissors': 
                     result = "tie";
@@ -52,7 +56,7 @@ function playRound(playerSelection, compSelection) {
             }
             break;
 
-        case 'Paper':
+        case 'paper':
             switch (compSelection) {
                 case 'Paper': 
                     result = "tie";
@@ -86,25 +90,6 @@ function winLoseTie() {
     }
 }
 
-//let playerSelection = "Scissors";
-
-//console.log(playRound(playerSelection, compSelection));
-
-/*function game() {
-    playRound(playerSelection, compSelection);
-    winLoseTie();
-    playRound(playerSelection, compSelection);
-    winLoseTie();
-    playRound(playerSelection, compSelection);
-    winLoseTie();
-    playRound(playerSelection, compSelection);
-    winLoseTie();
-    playRound(playerSelection, compSelection);
-    winLoseTie();
-    return win, lose;
-    //return result;
-}*/
-
 function game() {
     for (let i = 0; i < 5; i++) {
         if (i < 5) {
@@ -112,8 +97,10 @@ function game() {
             console.log(result);
             winLoseTie();
         } 
-    } console.log(win, lose, tie); //alert(`You have ${win} wins, ${lose} losses, and ${tie} ties.`)
+    } console.log(`You have ${win} wins, ${lose} losses, and ${tie} ties.`); //alert(`You have ${win} wins, ${lose} losses, and ${tie} ties.`)
+    console.log(overall());
 }
+
 console.log(game());
 
 function overall() {
@@ -123,7 +110,7 @@ function overall() {
     } else if (lose > win) {
         victory = "Sucks to suck";
     } else {
-        victory = "idk man";
+        victory = "idk man"; //If the player and computer tie
     }
     return victory;
 }
