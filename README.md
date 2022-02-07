@@ -4,3 +4,11 @@ Last April, I tried this project but couldn't get it to work exactly right. I we
 
 16:45
 Stuck on step 6, the game function. Otherwise, code has went smoothly. Attempted to create user interface and connect it to script as player selection, but failed. May work more on this later, but I will likely wait until Odin revisits the project. Will continue tomorrow. Or tonight.
+
+Code for connecting to hmtl
+//let select = document.querySelector('select');
+//let para = document.querySelector('p');
+/*
+let playerSelection = select;
+select.addEventListener('change', playRound(playerSelection, compSelection)); 
+*/
