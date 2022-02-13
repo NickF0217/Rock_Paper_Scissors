@@ -16,3 +16,6 @@ select.addEventListener('change', playRound(playerSelection, compSelection));
 Feb 7
 After almost a week of slacking and not working when I knew I should be, I have come further in this project than I thought I could without looking at others' code. At this point, I can have five games played with unique moves from both the computer and the user, keep track of the winner of each round, and return an overall victor. The only detail left is to make sure the functions recognize different cases for the user imputs.
 1730 update: I passed the playerSelection variable through toLowerCase() and reassigned it to itself to make all player inputs change to lower case, then changed the switches in playRound() to look for the lower case versions. EZ.
+
+Feb 13
+Removed unnecessary if statement from game() function. Works as intended without it. 

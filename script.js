@@ -3,7 +3,7 @@ console.log('Discipline equals freedom');
 function computerPlay() {
     let compRandom = Math.random();
     let compMove;
-    if (compRandom < 0.33) {
+    if (compRandom <= 0.33) {
         compMove = "Rock";
     } else if (compRandom > 0.665) {
         compMove = "Paper";
@@ -92,11 +92,11 @@ function winLoseTie() {
 
 function game() {
     for (let i = 0; i < 5; i++) {
-        if (i < 5) {
+        //if (i < 5) {
             playRound(playerSelection, compSelection);
             console.log(result);
             winLoseTie();
-        } 
+        //} 
     } console.log(`You have ${win} wins, ${lose} losses, and ${tie} ties.`); //alert(`You have ${win} wins, ${lose} losses, and ${tie} ties.`)
     console.log(overall());
 }
