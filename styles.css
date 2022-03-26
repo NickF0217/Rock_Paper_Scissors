@@ -1,5 +1,5 @@
-* {
-    background-color: #444444;
+body {
+    background-color: #777;
     /*color: rgb(45, 190, 140);*/
     font-family: 'Courier New', Courier, monospace;
 }
@@ -18,4 +18,29 @@ p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     color: #ff0606;
+}
+
+/*.game-choices {
+    padding: 20px;
+    background-color: silver;
+    font-weight: bold;
+
+}*/
+button {
+    padding: 20px;
+    background-color: silver;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 17px;
+}
+
+button:active {
+    background-color: #2fab1c;
+    border-width: 5px;
+
+}
+
+.results {
+    font-size: 24px;
+    font-weight: bold;
 }

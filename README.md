@@ -18,4 +18,14 @@ After almost a week of slacking and not working when I knew I should be, I have 
 1730 update: I passed the playerSelection variable through toLowerCase() and reassigned it to itself to make all player inputs change to lower case, then changed the switches in playRound() to look for the lower case versions. EZ.
 
 Feb 13
-Removed unnecessary if statement from game() function. Works as intended without it. 
+Removed unnecessary if statement from game() function. Works as intended without it.
+
+March 19 
+Began work on user interface. Created a button for each player option in html and added event listener. Having trouble using them to initiate playRound function.
+
+March 21
+This shit isn't working. I need to find a way to add the correct player selection and run a round of the game within the same function.
+
+March 25
+00:41
+playRound on button click works.
