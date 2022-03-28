@@ -183,3 +183,10 @@ chooseScissors.addEventListener('click', () => {
     playRound(playerSelection, compSelection);
 });
 
+const reset = document.querySelector('#reset');
+
+reset.addEventListener('click', () =>{
+    location.reload();
+    return false;
+}
+);

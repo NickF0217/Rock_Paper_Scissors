@@ -44,3 +44,12 @@ button:active {
     font-size: 24px;
     font-weight: bold;
 }
+
+.reset {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#reset {
+    padding: 13px;
+    background-color: aliceblue;
+}
